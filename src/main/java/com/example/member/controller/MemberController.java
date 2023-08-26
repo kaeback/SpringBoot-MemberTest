@@ -29,7 +29,7 @@ public class MemberController {
     // 회원정보 전체 조회
     @GetMapping("members")
     public List<Member> findMembers() {
-        log.info("findMembers");
+        log.info("findMembers11");
         return memberRepository.findAll();
     }
 

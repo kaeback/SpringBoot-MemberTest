@@ -2,6 +2,7 @@
 
 REPOSITORY=/home/ec2-user/web/step1
 PROJECT_NAME=SpringBoot-MemberTest
+JAR_NAME=SpringBoot-MemberTest-0.0.1-SNAPSHOT.jar
 
 cd $REPOSITORY
 
@@ -26,9 +27,6 @@ else
 fi
 
 echo "> 새 애플리케이션 배포"
-
-# jar 파일을 시간순서대로 정렬한 후 제일 마지막 한 개를 읽어온다
-JAR_NAME=$(ls -tr $REPOSITORY/ | grep jar | tail -n 1)
 
 echo "> JAR Name: $JAR_NAME"
 
